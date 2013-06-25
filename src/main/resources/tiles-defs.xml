@@ -35,6 +35,18 @@
         <put-attribute name="main" value="/WEB-INF/jsp/search/search_result.jsp" />
         <put-attribute name="jsFile" value="js/search/search_result.js" />
     </definition>
+    <definition name="sessionconfigresult" extends="base.definition">
+        <put-attribute name="title" value="Checklist : Session Configuration Result" />
+        <put-attribute name="heading" value="Session Configuration Result" />
+        <put-attribute name="main" value="/WEB-INF/jsp/config/session_configurator_result.jsp" />
+        <put-attribute name="jsFile" value="js/search/search_result.js" />
+    </definition>
+    <definition name="sessionconfig" extends="base.definition">
+        <put-attribute name="title" value="Checklist : Session Configuration" />
+        <put-attribute name="heading" value="Session Configuration" />
+        <put-attribute name="main" value="/WEB-INF/jsp/config/session_configurator.jsp" />
+        <put-attribute name="jsFile" value="js/search/search_result.js" />
+    </definition>
     <definition name="dashboard" extends="base.definition">
         <put-attribute name="title" value="Checklist : Dashboard" />
         <put-attribute name="heading" value="Dashboard" />
