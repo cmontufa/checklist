@@ -35,16 +35,22 @@
         <put-attribute name="main" value="/WEB-INF/jsp/search/search_result.jsp" />
         <put-attribute name="jsFile" value="js/search/search_result.js" />
     </definition>
-    <definition name="sessionconfigresult" extends="base.definition">
-        <put-attribute name="title" value="Checklist : Session Configuration Result" />
-        <put-attribute name="heading" value="Session Configuration Result" />
-        <put-attribute name="main" value="/WEB-INF/jsp/config/session_configurator_result.jsp" />
+    <definition name="applicationconfigresult" extends="base.definition">
+        <put-attribute name="title" value="Checklist : Application Configuration Result" />
+        <put-attribute name="heading" value="Application Configuration Result" />
+        <put-attribute name="main" value="/WEB-INF/jsp/config/application_configurator_result.jsp" />
         <put-attribute name="jsFile" value="js/search/search_result.js" />
     </definition>
-    <definition name="sessionconfig" extends="base.definition">
-        <put-attribute name="title" value="Checklist : Session Configuration" />
-        <put-attribute name="heading" value="Session Configuration" />
-        <put-attribute name="main" value="/WEB-INF/jsp/config/session_configurator.jsp" />
+    <definition name="applicationconfig" extends="base.definition">
+        <put-attribute name="title" value="Checklist : Application Configuration" />
+        <put-attribute name="heading" value="Application Configuration" />
+        <put-attribute name="main" value="/WEB-INF/jsp/config/application_configurator.jsp" />
+        <put-attribute name="jsFile" value="js/search/search_result.js" />
+    </definition>
+    <definition name="userdetail" extends="base.definition">
+        <put-attribute name="title" value="Checklist : User Detail" />
+        <put-attribute name="heading" value="User Detail" />
+        <put-attribute name="main" value="/WEB-INF/jsp/user/userDetail.jsp" />
         <put-attribute name="jsFile" value="js/search/search_result.js" />
     </definition>
     <definition name="dashboard" extends="base.definition">

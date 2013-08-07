@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
 public class SpringApplicationContext implements ApplicationContextAware {
     private static SpringApplicationContext instance;
     private ApplicationContext context;
+    
 
     public SpringApplicationContext() {
         synchronized (SpringApplicationContext.class) {

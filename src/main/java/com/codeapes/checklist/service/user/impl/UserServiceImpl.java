@@ -69,6 +69,24 @@ public class UserServiceImpl implements UserService {
 
         return user;
     }
+    
+    @Override
+    @Transactional(propagation = Propagation.REQUIRED)
+    public User createUser(final String username, final String firstName, final String lastName, final boolean active,
+        final String password, final Role role, final String createdBy) {
+
+        final User user = new User();
+        user.setActive(active);
+        user.setUsername(username);
+        user.setFirstName(firstName);
+        user.setLastName(lastName);
+        user.setPassword(passwordEncoder.encodePassword(password, username));
+        user.addUserRole(role);
+
+        createUser(user, createdBy);
+
+        return user;
+    }
 
     @Override
     @Transactional(propagation = Propagation.REQUIRED)
